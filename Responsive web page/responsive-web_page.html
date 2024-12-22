@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #87cefa;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        section .text-content {
+            font-size: 1.2rem;
+        }
+
+        section .image-content img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: white;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+
+        footer .social-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-links a:hover {
+            color: #ff6347;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            section {
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 1025px) {
+        
+        }
+
+        header, main, footer {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">JAYXO</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="text-content">
+            <h1>Welcome to My Website</h1>
+            <p>Hello! I'm Jasmine, a tech enthusiast with a curious mind passionate about exploring and building innovative solutions in artificial intelligence, web development, and all things tech. I thrive on creating functional, user-friendly web applications and leveraging AI to solve real-world problems.</p>
+        </div>
+        <div class="image-content">
+            <img src="Celestial Dreamscape_ Starry Night Wallpaper.jpeg" alt="">
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ol type="1">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ol>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div>
+                <h3>Project 1</h3>
+                <p>A responsive website built using HTML, CSS, and JavaScript.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div>
+                <h3>Project 2</h3>
+                <p>A portfolio website showcasing my web development skills.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me at:</p>
+        <p>Email: hanojasmine2@gmail.com</p>
+        <p>Phone: +254706213608</p>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div>&copy; 2024 </div>
+    </footer>
+</body>
+</html>
